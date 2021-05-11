@@ -1,0 +1,187 @@
+body{
+    width: 80%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4f4f4;
+    --clr-primary : hsl(209, 50%, 71%);
+    --clr-modal : hsl(209, 75%, 91%);
+    --clr-modal-top: hsl(209, 75%, 41%);
+    --spacer:15px;
+}
+h2{
+    position: absolute;
+    right:75px
+}
+h4 {
+    position: absolute;
+    top:275px;
+    left: 600px;
+}
+h6 {
+    margin-top:0;
+    font-size: 1.5rem;
+    color:hsl(0, 0%, 25%);
+    text-align:center
+}
+    /*BOTTONE*/
+.inputScelta{
+    -webkit-appearance: none;
+    outline:none;
+    background: white;
+    border: 2px solid var(--clr-primary);
+    font-weight: 600;
+    padding:0.25em 1.5em;
+    position: relative;
+    top:25px;
+    width:100%;
+    border-radius: 0 0 5px 5px;
+    color: var(--clr-primary);
+    transition: color 150ms ease-in;
+    transition: background 250ms ease-in
+}
+.inputScelta:hover{
+    cursor: pointer;
+    background: hsl(209, 75%, 60%);
+    color:white;
+    
+}
+.Contenitore {
+    margin:0;
+    background: var(--clr-primary);
+    border-radius: 50px 50px 0 0;
+    position:relative;
+    height:180px;
+    width:150px;
+}
+.Image{
+    position: relative;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+#Rock,#Spock{
+    margin-top: 120px;
+}
+#Spock{
+    left:-200px;
+}
+#Rock{
+    right: -200px;
+}
+#Paper,#Lizard{
+    margin-top: 375px;
+}
+#Lizard{
+    left: -75px;
+}
+#Paper{
+    right:-75px;
+}
+#myChoice{
+    color: rgb(52, 25, 116);
+}
+#CpuChoice{
+    color:hsl(209, 75%, 21%)
+}
+.regole{
+    position:absolute;
+    border: 1px solid var(--clr-primary);
+    width:7em;
+    padding : 0.5em 0 ;
+    margin-top: 20px;
+    margin-left: -100px;
+    background:white;
+    font-weight: 900;
+    color:var(--clr-primary);
+    transition: color 250ms ease-in;
+    transition: background 250ms ease-in;
+}
+.regole:hover{
+    cursor: pointer;
+    background: var(--clr-primary);
+    color:white;
+}
+.modal{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    width:100%;
+    height:0;
+    background: rgba(0, 0, 0,0.4);
+    transition:height 200ms ease-in;
+   
+  }
+  .modal__content{
+    margin: 5% auto;
+    width:60%;
+    background-color:var(--clr-modal);
+    padding:1.5em;
+    border-top:20px solid var(--clr-modal-top);
+    border-radius:20px;  
+  }
+  .modal__paragraph{
+    font-size:1.2rem;
+    text-align:center;
+  }
+  .close {
+    color: var(--clr-primary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#regole__image{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 225px;
+}
+#creatore{
+    position: absolute;
+    margin-top: 600px;
+    margin-left: -120px;
+    font-size: 0.75rem;
+}
+@media screen and (max-width: 768px) { 
+    #Rock,#Spock{
+        margin-top: var(--spacer);
+    }
+    #Spock{
+        left:-0;
+    }
+    #Rock{
+        right: -0;
+    }
+    #Paper,#Lizard{
+        margin-top:  var(--spacer);
+    }
+    #Lizard{
+        left: 0;
+    }
+    #Paper{
+        right:0;
+    }   
+    #Scissors{
+        margin-top:var(--spacer);
+    }
+    #regole__image{
+        margin-left: var(--spacer);
+    }
+    .regole{
+        margin-left: 265px;
+        margin-top: 75px;
+    }
+    h4{
+        margin-left: -285px;
+        margin-top: 0;
+    }
+}
