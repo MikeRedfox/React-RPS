@@ -44,7 +44,7 @@ class App extends Component {
       <div className="modal" id="mymodal">
         <div className="modal__content">
            <span id='close' className="close">&times;</span>
-          <img id='regole__image' src = {regole} alt ='' height = '350'/>
+          <img id='regole__image' src = {regole} alt ='' height = '250'/>
        </div>
      </div>
       <h2 >Score : <span id = 'score'>0</span></h2>
